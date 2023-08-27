@@ -5,5 +5,5 @@ export const sliitFossMainWebsite = "https://sliitfoss.org";
 export let portalURL = "https://portal.bashaway.sliitfoss.org";
 
 if (import.meta.env.VITE_APP_ENV !== "production") {
-  portalURL = portalURL.replace("portal.", `leaderboard.${import.meta.env.VITE_APP_ENV}.`);
+  portalURL = portalURL.replace("portal.", `portal.${import.meta.env.VITE_APP_ENV}.`);
 }
