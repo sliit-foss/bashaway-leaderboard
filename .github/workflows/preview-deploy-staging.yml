@@ -1,9 +1,13 @@
-name: CI Staging deploy
+name: Deploy Staging PR preview
 
 on:
-  push:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
     branches:
-      - development
+        - development
 jobs:
   deploy:
     name: Deploy to staging
@@ -23,4 +27,3 @@ jobs:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
           projectId: bashaway-staging
-          channelId: live
