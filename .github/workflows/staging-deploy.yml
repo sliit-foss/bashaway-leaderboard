@@ -6,7 +6,7 @@ on:
       - development
 jobs:
   deploy:
-    name: Deploy to production
+    name: Deploy to staging
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository 🛎️
@@ -15,14 +15,8 @@ jobs:
       - name: Build 🏗️
         uses: ./.github/actions/build
         env:
-          VITE_BASHAWAY_BE_URL: ${{ secrets.PRODUCTION_BASHAWAY_BE_URL }}
-          VITE_APP_ENV: production
-
-      - name: Fix base URL 🔧
-        run: sed -i "s/.\/assets/\/assets/" dist/index.html
-
-      - name: Fix 404 on page reload 🚧
-        uses: sliit-foss/actions/preview-deployments/404@main
+          VITE_BASHAWAY_BE_URL: ${{ secrets.STAGING_BASHAWAY_BE_URL }}
+          VITE_APP_ENV: staging
 
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
