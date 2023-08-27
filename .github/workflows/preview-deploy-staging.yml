@@ -10,7 +10,7 @@ on:
         - development
 jobs:
   deploy:
-    name: Deploy to staging
+    name: Deploy staging preview
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository 🛎️
