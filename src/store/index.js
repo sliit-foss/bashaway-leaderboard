@@ -3,7 +3,7 @@ import { leaderboardApi } from "./api";
 
 export function makeStore() {
   return configureStore({
-    devTools: process.env.NODE_ENV !== "production",
+    devTools: import.meta.env.VITE_APP_ENV !== "production",
     reducer: combineReducers({
       [leaderboardApi.reducerPath]: leaderboardApi.reducer
     }),
