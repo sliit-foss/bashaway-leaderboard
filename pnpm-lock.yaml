@@ -14,8 +14,8 @@ dependencies:
     specifier: 1.9.5
     version: 1.9.5(react-redux@8.1.2)(react@18.0.0)
   '@sliit-foss/bashaway-ui':
-    specifier: 0.1.10
-    version: 0.1.10(@babel/core@7.22.9)(@types/react-dom@18.0.11)(@types/react@18.0.28)(redux@4.2.1)(tailwindcss@3.3.2)
+    specifier: 0.2.5
+    version: 0.2.5(@babel/core@7.22.9)(@types/react-dom@18.0.11)(@types/react@18.0.28)(redux@4.2.1)(tailwindcss@3.3.2)
   framer-motion:
     specifier: 10.14.0
     version: 10.14.0(react-dom@18.0.0)(react@18.0.0)
@@ -566,6 +566,7 @@ packages:
 
   /@emotion/memoize@0.7.4:
     resolution: {integrity: sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==}
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -1458,8 +1459,8 @@ packages:
     engines: {node: '>=14'}
     dev: false
 
-  /@sliit-foss/bashaway-ui@0.1.10(@babel/core@7.22.9)(@types/react-dom@18.0.11)(@types/react@18.0.28)(redux@4.2.1)(tailwindcss@3.3.2):
-    resolution: {integrity: sha512-h15aIw9JcfYOb+8dlSK2Pz9RlaJJFpY5fECWpduUBO8RLmn9gFwTVyTufJvu4WYOl6DX9yO+m/dLdcvfTNAweA==}
+  /@sliit-foss/bashaway-ui@0.2.5(@babel/core@7.22.9)(@types/react-dom@18.0.11)(@types/react@18.0.28)(redux@4.2.1)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-9fLQph52g2+3Jp3JLl8Ij66O6WeBs0waJgxT31hiem8DOT5p7ofM6oNOGCiP9VbwzGgjfSOwiK93Xbupp+L0SQ==}
     dependencies:
       '@radix-ui/react-alert-dialog': 1.0.4(@types/react-dom@18.0.11)(@types/react@18.0.28)(react-dom@18.0.0)(react@18.0.0)
       '@radix-ui/react-toast': 1.1.4(@types/react-dom@18.0.11)(@types/react@18.0.28)(react-dom@18.0.0)(react@18.0.0)
@@ -3148,6 +3149,7 @@ packages:
 
   /loose-envify@1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
+    hasBin: true
     dependencies:
       js-tokens: 4.0.0
 

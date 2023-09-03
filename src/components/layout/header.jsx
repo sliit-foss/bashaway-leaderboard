@@ -6,7 +6,7 @@ import { portalURL } from "@/constants";
 import { useBreakpoint } from "@/hooks";
 import { BashawayLeaderboard } from "@/icons";
 import { AnimatedSwitcher, Button } from "@sliit-foss/bashaway-ui/components";
-import { Bashaway, FOSS, Times } from "@sliit-foss/bashaway-ui/icons";
+import { Bashaway, FOSS, Link as LinkIcon, Times } from "@sliit-foss/bashaway-ui/icons";
 
 const mobileNavIconStyles =
   "block xl:hidden absolute right-8 lg:right-24 h-[1.65rem] w-[1.65rem] cursor-pointer hover:text-black/70 transition-all duration-medium";
@@ -67,6 +67,12 @@ const Header = ({ className }) => {
                 : "opacity-0 pointer-events-none xl:opacity-100 xl:pointer-events-auto"
             )}
           >
+            <div className="group flex gap-1.5 items-center">
+              <a href="https://bashaway.sliitfoss.org" target="_blank" className="link ml-8 xl:ml-0" rel="noreferrer">
+                The competition
+              </a>
+              <LinkIcon className="transform -rotate-45 before:w-[1.2rem] xl:before:w-[0.6rem] before:group-hover:w-[1.45rem] xl:before:group-hover:w-[0.75rem] translate-y-[-0.1rem]" />
+            </div>
             <a href={portalURL}>
               <Button className={buttonStyles}>Back to Portal</Button>
             </a>
