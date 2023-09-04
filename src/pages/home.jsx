@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { useState } from "react";
 import { ScoreCardSkeleton } from "@/components";
 import { ScoreCard } from "@/components/home";
@@ -10,11 +9,15 @@ import { Footnote, Title } from "@sliit-foss/bashaway-ui/typography";
 import { computeFilterQuery, computeSortQuery } from "@sliit-foss/bashaway-ui/utils";
 
 const Home = () => {
-  useTitle("Leaderboard | Bashaway");
-  const [_filters, setFilters] = useState(computeFilterQuery(filterData));
-  const [_sorts, setSorts] = useState(computeSortQuery(sortData));
+  const [page, setPage] = useState(1);
+  const [filters, setFilters] = useState(computeFilterQuery(filterData));
+  const [sorts, setSorts] = useState(computeSortQuery(sortData));
 
-  const { data: scores, isFetching } = useFetchLeaderboardQuery();
+  const { data: scores, isFetching } = useFetchLeaderboardQuery({ page, filters, sorts });
+
+  useTitle("Leaderboard | Bashaway");
+
+  console.log(scores);
 
   return (
     <>
@@ -22,22 +25,26 @@ const Home = () => {
         <div className="flex flex-col items-center gap-2 md:gap-1 mb-6 pointer-events-none">
           <Title className="tracking-normal">The Leaderboard</Title>
           <Footnote className="text-black/40 max-w-[500px] text-xl lg:text-center leading-6">
-            A place where your true colors showed off despite all the differences
+            A place where your true colors show off despite all the differences
           </Footnote>
         </div>
-        <div className="w-full flex justify-center items-center gap-6 mb-8">
-          <Filters filters={filterData} setFilterQuery={setFilters} />
-          <Sorts styles={{ root: "justify-end" }} sorts={sortData} setSortQuery={setSorts} />
+        <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 mb-8">
+          <Filters filters={filterData} setFilterQuery={setFilters} styles={{ filter: "md:w-3/4" }} />
+          <Sorts
+            styles={{ root: "justify-end", sort: "justify-center md:justify-start" }}
+            sorts={sortData}
+            setSortQuery={setSorts}
+          />
         </div>
         <AnimatedSwitcher
           show={isFetching}
-          className={`w-full flex flex-col gap-5`}
+          className={`w-full flex flex-col gap-5 min-h-[150px] xl:min-h-[250px] 2xl:min-h-[350px]`}
           component={<ScoreCardSkeleton />}
           alternateComponent={
-            scores && scores.data.length ? (
+            scores?.data?.docs?.length ? (
               <>
-                {scores.data.map((item, index) => (
-                  <ScoreCard item={item} index={index} key={`score-card-${index}`} />
+                {scores.data.docs.map((item, index) => (
+                  <ScoreCard item={item} key={`score-card-${index}`} />
                 ))}
               </>
             ) : (
@@ -49,9 +56,9 @@ const Home = () => {
         />
         <div className="w-full flex justify-center items-center mt-6 mb-2">
           <Pagination
-            currentPage={1}
-            // onPageChange={(newPage) => setPage(newPage)}
-            totalPages={1}
+            currentPage={page}
+            onPageChange={(newPage) => setPage(newPage)}
+            totalPages={scores?.data?.totalPages}
           />
         </div>
       </div>

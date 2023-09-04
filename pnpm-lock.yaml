@@ -14,8 +14,8 @@ dependencies:
     specifier: 1.9.5
     version: 1.9.5(react-redux@8.1.2)(react@18.0.0)
   '@sliit-foss/bashaway-ui':
-    specifier: 0.2.5
-    version: 0.2.5(@babel/core@7.22.9)(@types/react-dom@18.0.11)(@types/react@18.0.28)(redux@4.2.1)(tailwindcss@3.3.2)
+    specifier: 0.5.1
+    version: 0.5.1(@babel/core@7.22.9)(@types/react-dom@18.0.11)(@types/react@18.0.28)(redux@4.2.1)(tailwindcss@3.3.2)
   framer-motion:
     specifier: 10.14.0
     version: 10.14.0(react-dom@18.0.0)(react@18.0.0)
@@ -1459,8 +1459,8 @@ packages:
     engines: {node: '>=14'}
     dev: false
 
-  /@sliit-foss/bashaway-ui@0.2.5(@babel/core@7.22.9)(@types/react-dom@18.0.11)(@types/react@18.0.28)(redux@4.2.1)(tailwindcss@3.3.2):
-    resolution: {integrity: sha512-9fLQph52g2+3Jp3JLl8Ij66O6WeBs0waJgxT31hiem8DOT5p7ofM6oNOGCiP9VbwzGgjfSOwiK93Xbupp+L0SQ==}
+  /@sliit-foss/bashaway-ui@0.5.1(@babel/core@7.22.9)(@types/react-dom@18.0.11)(@types/react@18.0.28)(redux@4.2.1)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-r1NltU+thNThiv9UViU5xFGLUk9MJ2zPXNJyboXd6Z2CSABAlCE+HAdRoWw4vb9VQYguVt4C6Qlc4x0L4qhyMQ==}
     dependencies:
       '@radix-ui/react-alert-dialog': 1.0.4(@types/react-dom@18.0.11)(@types/react@18.0.28)(react-dom@18.0.0)(react@18.0.0)
       '@radix-ui/react-toast': 1.1.4(@types/react-dom@18.0.11)(@types/react@18.0.28)(react-dom@18.0.0)(react@18.0.0)

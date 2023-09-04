@@ -7,7 +7,7 @@ export const filters = [
 
 export const sorts = [
   {
-    key: "max_score",
+    key: "score",
     label: "Sort by points",
     direction: 0
   },
