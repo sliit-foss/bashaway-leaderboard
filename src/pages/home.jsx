@@ -17,8 +17,6 @@ const Home = () => {
 
   useTitle("Leaderboard | Bashaway");
 
-  console.log(scores);
-
   return (
     <>
       <div className="w-full flex flex-col justify-center items-center gap-6 mb-8 max-w-4xl">
