@@ -25,8 +25,9 @@ export const ScoreCard = ({ item, ...props }) => {
       <div className="flex gap-6 items-center">
         <div
           className={twMerge(
-            `w-16 h-16 rounded-2xl border border-black/10 flex justify-center items-center filter group-hover:brightness-[1.25] transition-all duration-medium`,
-            [1, 2, 3].includes(item.place) && "bg-gradient-to-tr from-[#f90000] to-[#FF881A] text-white"
+            `w-16 h-16 rounded-2xl outline outline-1 outline-black/[0.125] flex justify-center items-center filter group-hover:brightness-[1.25] transition-all duration-medium`,
+            [1, 2, 3].includes(item.place) &&
+              "bg-gradient-to-tr from-[#f90000] to-[#FF881A] text-white outline-transparent"
           )}
         >
           <Title className="font-medium">{item.place}</Title>
