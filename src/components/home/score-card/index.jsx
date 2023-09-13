@@ -15,7 +15,7 @@ export const ScoreCard = ({ item, ...props }) => {
   return (
     <div
       className={twMerge(
-        `flex flex-wrap group gap-5 sm:gap-6 px-6 py-5 rounded-2xl border border-black/10 cursor-default justify-between items-center ${topThreeGradient(
+        `flex flex-wrap group gap-5 sm:gap-6 px-5 sm:px-6 py-5 rounded-2xl border border-black/10 cursor-default justify-between items-center ${topThreeGradient(
           item.place
         )}`,
         [1, 2, 3].includes(item.place) && "border-black/[0.075]"
@@ -38,7 +38,7 @@ export const ScoreCard = ({ item, ...props }) => {
           </Body>
           <div className="flex gap-[6px] items-center opacity-40 -translate-y-0.5">
             <GraduationCap strokeWidth={1.5} />
-            <Footnote>{item.university}</Footnote>
+            <Footnote className="text-[14.25px] sm:text-[15px]">{item.university}</Footnote>
           </div>
         </div>
       </div>
