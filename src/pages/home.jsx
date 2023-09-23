@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ScoreCardSkeleton } from "@/components";
 import { ScoreCard } from "@/components/home";
 import { filters as filterData, sorts as sortData } from "@/filters";
@@ -16,6 +16,10 @@ const Home = () => {
   const { data: scores, isFetching } = useFetchLeaderboardQuery({ page, filters, sorts });
 
   useTitle("Leaderboard | Bashaway");
+
+  useEffect(() => {
+    if (page !== 1) setPage(1);
+  }, [filters, sorts]);
 
   return (
     <>
