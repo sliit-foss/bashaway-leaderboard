@@ -50,7 +50,7 @@ export const ScoreCard = ({ item, ...props }) => {
           item.place === 3 && "border-black/[0.05]"
         )}
       >
-        <Body2>{item.score.toFixed(2)}</Body2>
+        <Body2>{item.score}</Body2>
       </div>
     </div>
   );
