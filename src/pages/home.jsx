@@ -25,7 +25,7 @@ const Home = () => {
     <>
       <div className="w-full flex flex-col justify-center items-center gap-6 mb-8 max-w-4xl">
         <div className="flex flex-col items-center gap-2 md:gap-1 mb-6 pointer-events-none">
-          <Title className="tracking-normal">The Leaderboard</Title>
+          <Title className="tracking-normal">The Leader</Title>
           <Footnote className="text-black/40 max-w-[500px] text-xl lg:text-center leading-6">
             A place where your true colors show off despite all the differences
           </Footnote>
