@@ -4,7 +4,15 @@ import { ScoreCard } from "@/components/home";
 import { filters as filterData, sorts as sortData } from "@/filters";
 import { useTitle } from "@/hooks";
 import { useFetchLeaderboardQuery } from "@/store/api";
-import { AnimatedSwitcher, Filters, NoRecords, Pagination, Sorts } from "@sliit-foss/bashaway-ui/components";
+import {
+  AnimatedSwitcher,
+  Filters,
+  NoRecords,
+  Pagination,
+  Sorts,
+  TwinSwitch
+} from "@sliit-foss/bashaway-ui/components";
+import { useRound } from "@sliit-foss/bashaway-ui/hooks";
 import { Footnote, Title } from "@sliit-foss/bashaway-ui/typography";
 import { computeFilterQuery, computeSortQuery } from "@sliit-foss/bashaway-ui/utils";
 
@@ -13,22 +21,25 @@ const Home = () => {
   const [filters, setFilters] = useState(computeFilterQuery(filterData));
   const [sorts, setSorts] = useState(computeSortQuery(sortData));
 
-  const { data: scores, isFetching } = useFetchLeaderboardQuery({ page, filters, sorts });
+  const { rounds, round, roundKey, onRoundChange } = useRound();
 
-  useTitle("Leaderboard | Bashaway");
+  const { data: scores, isFetching } = useFetchLeaderboardQuery({ page, filters, sorts, round });
 
   useEffect(() => {
     if (page !== 1) setPage(1);
-  }, [filters, sorts]);
+  }, [filters, sorts, round]);
+
+  useTitle("Leaderboard | Bashaway");
 
   return (
     <>
       <div className="w-full flex flex-col justify-center items-center gap-6 mb-8 max-w-4xl">
-        <div className="flex flex-col items-center gap-2 md:gap-1 mb-6 pointer-events-none">
-          <Title className="tracking-normal">The Leaderboard</Title>
-          <Footnote className="text-black/40 max-w-[500px] text-xl lg:text-center leading-6">
+        <div className="flex flex-col items-center gap-2 md:gap-1 mb-2">
+          <Title className="tracking-normal pointer-events-none">The Leaderboard</Title>
+          <Footnote className="text-black/40 max-w-[500px] text-xl lg:text-center leading-6 pointer-events-none">
             A place where your true colors show off despite all the differences
           </Footnote>
+          <TwinSwitch values={rounds} className="mt-5" onChange={onRoundChange} selectedValue={roundKey} />
         </div>
         <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 mb-8">
           <Filters filters={filterData} setFilterQuery={setFilters} styles={{ filter: "md:w-3/4" }} />

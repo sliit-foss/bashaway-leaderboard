@@ -8,7 +8,7 @@ export const leaderboardApi = createApi({
   baseQuery,
   endpoints: (builder) => ({
     fetchLeaderboard: builder.query({
-      query: () => `/api/leaderboard`,
+      query: ({ round }) => `/api/leaderboard?round=${round}`,
       transformResponse: (response, _, arg) => {
         const { page, filters, sorts } = arg;
         response.data = response.data.map((item, index) => ({ ...item, place: index + 1 }));
