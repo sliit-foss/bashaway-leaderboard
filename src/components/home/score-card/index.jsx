@@ -1,5 +1,7 @@
 import { GraduationCap } from "lucide-react";
 import { twMerge } from "tailwind-merge";
+import { useBreakpoint } from "@/hooks";
+import { Button } from "@sliit-foss/bashaway-ui/components";
 import { Body, Body2, Footnote, Title } from "@sliit-foss/bashaway-ui/typography";
 
 const topThreeGradient = (position) => {
@@ -11,7 +13,19 @@ const topThreeGradient = (position) => {
 
 export { default as ScoreCardSkeleton } from "./skeleton";
 
-export const ScoreCard = ({ item, ...props }) => {
+const Eliminated = ({ className, eliminated, ...props }) =>
+  eliminated && (
+    <Button
+      {...props}
+      className={twMerge("bg-[#f00] px-[0.7rem] py-[0.175rem] text-xs pointer-events-none", className)}
+    >
+      Eliminated
+    </Button>
+  );
+
+export const ScoreCard = ({ item, round, ...props }) => {
+  const breakpoints = useBreakpoint();
+  const eliminated = round === 2 && item.eliminated;
   return (
     <div
       className={twMerge(
@@ -33,12 +47,26 @@ export const ScoreCard = ({ item, ...props }) => {
           <Title className="font-medium">{item.place}</Title>
         </div>
         <div className="flex flex-col items-start gap-1 max-w-xl">
-          <Body className="font-inter font-semibold break-all line-clamp-1 leading-[1.3] group-hover:tracking-[0.15px] transition-all duration-medium">
-            {item.name}
-          </Body>
-          <div className="flex gap-[6px] items-center opacity-40 -translate-y-0.5">
-            <GraduationCap strokeWidth={1.5} />
-            <Footnote className="text-[14.25px] sm:text-[15px]">{item.university}</Footnote>
+          <div className="flex justify-start items-center gap-4">
+            <Body
+              className={twMerge(
+                "font-inter font-semibold break-all line-clamp-1 leading-[1.3] group-hover:tracking-[0.15px] transition-all duration-medium",
+                eliminated && "line-through"
+              )}
+            >
+              {item.name}
+            </Body>
+            {breakpoints["md"] && <Eliminated eliminated={eliminated} team={item} round={round} />}
+          </div>
+          <div className="flex flex-wrap gap-[6px] items-center -translate-y-0.5">
+            <GraduationCap strokeWidth={1.5} className="opacity-40" />
+            <Footnote className="text-[14.25px] sm:text-[15px] opacity-40">{item.university}</Footnote>
+            {!breakpoints["md"] && (
+              <Eliminated
+                eliminated={eliminated}
+                className="ml-2 px-[0.65rem] py-[0.15rem] text-[0.65rem] xs:text-xs"
+              />
+            )}
           </div>
         </div>
       </div>
