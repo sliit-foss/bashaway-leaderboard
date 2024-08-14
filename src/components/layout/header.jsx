@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
 import { portalURL } from "@/constants";
 import { useBreakpoint } from "@/hooks";
@@ -17,6 +18,7 @@ const Header = ({ className }) => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const breakpoints = useBreakpoint();
+  const location = useLocation();
 
   return (
     <header
@@ -67,6 +69,23 @@ const Header = ({ className }) => {
                 : "opacity-0 pointer-events-none xl:opacity-100 xl:pointer-events-auto"
             )}
           >
+            {location.pathname !== "/" && (
+              <div className="group flex gap-1.5 items-center">
+                <a href="/" target="_blank" className="link ml-8 xl:ml-0" rel="noreferrer">
+                  The Leaderboard
+                </a>
+                <LinkIcon className="transform -rotate-45 before:w-[1.2rem] xl:before:w-[0.6rem] before:group-hover:w-[1.45rem] xl:before:group-hover:w-[0.75rem] translate-y-[-0.1rem]" />
+              </div>
+            )}
+
+            {location.pathname !== "/halloffame" && (
+              <div className="group flex gap-1.5 items-center">
+                <a href="/halloffame" target="_blank" className="link ml-8 xl:ml-0" rel="noreferrer">
+                  The Hall of Fame
+                </a>
+                <LinkIcon className="transform -rotate-45 before:w-[1.2rem] xl:before:w/[0.6rem] before:group-hover:w/[1.45rem] xl:before:group-hover:w/[0.75rem] translate-y-[-0.1rem]" />
+              </div>
+            )}
             <div className="group flex gap-1.5 items-center">
               <a href="https://bashaway.sliitfoss.org" target="_blank" className="link ml-8 xl:ml-0" rel="noreferrer">
                 The competition
