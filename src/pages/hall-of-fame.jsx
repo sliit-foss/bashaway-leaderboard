@@ -4,6 +4,7 @@ import { ScoreCardSkeleton } from "@/components";
 import { ScoreCard } from "@/components/home";
 import { filters as filterData, sorts as sortData } from "@/filters";
 import { useTitle } from "@/hooks";
+import { computePastLeaderboardDataPath } from "@/utils/compute-data-path";
 import {
   AnimatedSwitcher,
   Filters,
@@ -16,22 +17,26 @@ import { useGhostLegion, useRound } from "@sliit-foss/bashaway-ui/hooks";
 import { Ghost } from "@sliit-foss/bashaway-ui/icons";
 import { Footnote, Title } from "@sliit-foss/bashaway-ui/typography";
 import { computeFilterQuery, computeSortQuery } from "@sliit-foss/bashaway-ui/utils";
-import { fetchPastLeaderboardData } from "@/utils/fetch-old-data";
 
 const HallOfFame = () => {
   const [page, setPage] = useState(1);
   const [filters, setFilters] = useState(computeFilterQuery(filterData));
   const [sorts, setSorts] = useState(computeSortQuery(sortData));
-
+  const [scores, setScores] = useState({});
+  
   const { rounds, round, roundKey, onRoundChange } = useRound();
-
   const { ghostLegion, toggleGhostLegion } = useGhostLegion();
-
-  const { data: scores, isFetching } = fetchPastLeaderboardData({ page, filters, sorts, round, ghostLegion, year: 2023 });
+  const dataPath = computePastLeaderboardDataPath({ page, filters, sorts, round, ghostLegion, year: 2023 });
 
   useEffect(() => {
+    const fetchPastLeaderboadData = async () => {
+      const data = (await import(`../../data/annual-leaderboard/${dataPath}.json`)).default;
+      setScores(data);
+    };
 
-  }, [])
+    fetchPastLeaderboadData();
+  }, [dataPath]);
+
   useEffect(() => {
     if (page !== 1) setPage(1);
   }, [filters, sorts, round, ghostLegion]);
@@ -75,13 +80,13 @@ const HallOfFame = () => {
           </div>
         </div>
         <AnimatedSwitcher
-          show={isFetching}
+          show={false}
           className={`w-full flex flex-col gap-5 min-h-[150px] xl:min-h-[250px] 2xl:min-h-[350px]`}
           component={<ScoreCardSkeleton />}
           alternateComponent={
-            scores?.data?.docs?.length ? (
+            scores?.length ? (
               <>
-                {scores.data.docs.map((item, index) => (
+                {scores.map((item, index) => (
                   <ScoreCard item={item} round={round} key={`score-card-${index}`} />
                 ))}
               </>
