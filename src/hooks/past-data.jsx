@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
 
+// TODO: add pagination
+// TODO: add sorting
+// TODO: add searcg
+// TODO: explore the possibility of reusing The leaderboard API s response tranform function
 const usePastData = ({ round, ghostLegion, year = 2023 }) => {
   const [pastData, setPastData] = useState({});
 
