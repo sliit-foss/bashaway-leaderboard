@@ -4,7 +4,7 @@ import { ScoreCardSkeleton } from "@/components";
 import { ScoreCard } from "@/components/home";
 import { filters as filterData, sorts as sortData } from "@/filters";
 import { useTitle } from "@/hooks";
-import { computePastLeaderboardDataPath } from "@/utils/compute-data-path";
+import usePastData from "@/hooks/past-data";
 import {
   AnimatedSwitcher,
   Filters,
@@ -22,20 +22,12 @@ const HallOfFame = () => {
   const [page, setPage] = useState(1);
   const [filters, setFilters] = useState(computeFilterQuery(filterData));
   const [sorts, setSorts] = useState(computeSortQuery(sortData));
-  const [scores, setScores] = useState({});
-  
   const { rounds, round, roundKey, onRoundChange } = useRound();
   const { ghostLegion, toggleGhostLegion } = useGhostLegion();
-  const dataPath = computePastLeaderboardDataPath({ page, filters, sorts, round, ghostLegion, year: 2023 });
-
-  useEffect(() => {
-    const fetchPastLeaderboadData = async () => {
-      const data = (await import(`../../data/annual-leaderboard/${dataPath}.json`)).default;
-      setScores(data);
-    };
-
-    fetchPastLeaderboadData();
-  }, [dataPath]);
+  const scores = usePastData({
+    round,
+    ghostLegion
+  });
 
   useEffect(() => {
     if (page !== 1) setPage(1);
