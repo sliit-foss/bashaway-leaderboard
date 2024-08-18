@@ -4,7 +4,7 @@ import { ScoreCardSkeleton } from "@/components";
 import { ScoreCard } from "@/components/home";
 import { filters as filterData, sorts as sortData } from "@/filters";
 import { useTitle } from "@/hooks";
-import usePastData from "@/hooks/past-data";
+import { useFetchPastLeaderboardsQuery } from "@/store/api";
 import {
   AnimatedSwitcher,
   Filters,
@@ -22,12 +22,10 @@ const HallOfFame = () => {
   const [page, setPage] = useState(1);
   const [filters, setFilters] = useState(computeFilterQuery(filterData));
   const [sorts, setSorts] = useState(computeSortQuery(sortData));
+
   const { rounds, round, roundKey, onRoundChange } = useRound();
   const { ghostLegion, toggleGhostLegion } = useGhostLegion();
-  const scores = usePastData({
-    round,
-    ghostLegion
-  });
+  const { data: scores, isFetching } = useFetchPastLeaderboardsQuery({ page, filters, sorts, round, ghostLegion });
 
   useEffect(() => {
     if (page !== 1) setPage(1);
@@ -72,13 +70,13 @@ const HallOfFame = () => {
           </div>
         </div>
         <AnimatedSwitcher
-          show={false}
+          show={isFetching}
           className={`w-full flex flex-col gap-5 min-h-[150px] xl:min-h-[250px] 2xl:min-h-[350px]`}
           component={<ScoreCardSkeleton />}
           alternateComponent={
-            scores?.length ? (
+            scores?.data?.docs?.length ? (
               <>
-                {scores.map((item, index) => (
+                {scores.data.docs.map((item, index) => (
                   <ScoreCard item={item} round={round} key={`score-card-${index}`} />
                 ))}
               </>

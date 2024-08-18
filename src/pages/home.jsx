@@ -4,8 +4,7 @@ import { ScoreCardSkeleton } from "@/components";
 import { ScoreCard } from "@/components/home";
 import { filters as filterData, sorts as sortData } from "@/filters";
 import { useTitle } from "@/hooks";
-import useDetectHallOfFame from "@/hooks/detect-hall-of-fame";
-import { useFetchPastLeaderboardsQuery } from "@/store/api";
+import { useFetchLeaderboardQuery } from "@/store/api";
 import {
   AnimatedSwitcher,
   Filters,
@@ -23,15 +22,11 @@ const Home = () => {
   const [page, setPage] = useState(1);
   const [filters, setFilters] = useState(computeFilterQuery(filterData));
   const [sorts, setSorts] = useState(computeSortQuery(sortData));
+
   const { rounds, round, roundKey, onRoundChange } = useRound();
   const { ghostLegion, toggleGhostLegion } = useGhostLegion();
-  const isHallOfFame = useDetectHallOfFame();
+  const { data: scores, isFetching } = useFetchLeaderboardQuery({ page, filters, sorts, round, ghostLegion });
 
-  // const { data: scores, isFetching } = useFetchLeaderboardQuery({ page, filters, sorts, round, ghostLegion });
-  const { data: scores, isFetching } = useFetchPastLeaderboardsQuery({ page, filters, sorts, round, ghostLegion });
-  console.log("The scores is fetching", isFetching, "\n scores are", scores);
-
-  useEffect(() => {}, [isHallOfFame]);
   useEffect(() => {
     if (page !== 1) setPage(1);
   }, [filters, sorts, round, ghostLegion]);
@@ -75,7 +70,7 @@ const Home = () => {
           </div>
         </div>
         <AnimatedSwitcher
-          show={false}
+          show={isFetching}
           className={`w-full flex flex-col gap-5 min-h-[150px] xl:min-h-[250px] 2xl:min-h-[350px]`}
           component={<ScoreCardSkeleton />}
           alternateComponent={
