@@ -12,7 +12,7 @@ const usePastData = ({ round, ghostLegion, year = 2023 }) => {
       let path = round == 1 ? "round1" : ghostLegion == true ? "ghost-legion" : "final";
       const data = (await import(`../../data/annual-leaderboard/${year}/${path}.json`)).default;
       //   console.log('Before mapping', data);
-      const transformedData = data.map((item, index) => ({ ...item, place: index + 1 }));
+      const transformedData = data.data.map((item, index) => ({ ...item, place: index + 1 }));
       //   console.log('After mapping', data);
       setPastData(transformedData);
     };

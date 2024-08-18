@@ -1,6 +1,6 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import { HallOfFame, Home, NotFound } from "@/pages";
+import { Home, NotFound } from "@/pages";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -8,7 +8,7 @@ const AnimatedRoutes = () => {
     <AnimatePresence>
       <Routes location={location}>
         <Route path="/" element={<Home />} />
-        <Route path="/hall-of-fame" element={<HallOfFame />} />
+        <Route path="/hall-of-fame" element={<Home />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>

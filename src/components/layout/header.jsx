@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
 import { portalURL } from "@/constants";
 import { useBreakpoint } from "@/hooks";
+import useDetectHallOfFame from "@/hooks/detect-hall-of-fame";
 import { BashawayLeaderboard } from "@/icons";
 import { AnimatedSwitcher, Button } from "@sliit-foss/bashaway-ui/components";
 import { Bashaway, FOSS, Link as LinkIcon, Times } from "@sliit-foss/bashaway-ui/icons";
@@ -17,9 +17,7 @@ const buttonStyles = "mt-1.5 xl:mt-0 px-8 xl:px-[1.15rem] pb-2.5 xl:pb-[0.4rem] 
 const Header = ({ className }) => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const breakpoints = useBreakpoint();
-
-  const location = useLocation();
-  const isHallOfFame = location.pathname === "/hall-of-fame";
+  const isHallOfFame = useDetectHallOfFame();
 
   return (
     <header
