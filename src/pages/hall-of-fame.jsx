@@ -31,7 +31,7 @@ const HallOfFame = () => {
     if (page !== 1) setPage(1);
   }, [filters, sorts, round, ghostLegion]);
 
-  useTitle("Leaderboard | Bashaway");
+  useTitle("Hall of Fame | Bashaway");
 
   return (
     <>
@@ -39,7 +39,7 @@ const HallOfFame = () => {
         <div className="flex flex-col items-center gap-2 md:gap-1 mb-2">
           <Title className="tracking-normal pointer-events-none">Hall of Fame 2023</Title>
           <Footnote className="text-black/40 max-w-[500px] text-xl lg:text-center leading-6 pointer-events-none">
-            A tribute to legendary warriors
+            A tribute to legendary warriors who once marched amongst us with unwavering valour
           </Footnote>
           <TwinSwitch values={rounds} className="mt-5" onChange={onRoundChange} selectedValue={roundKey} />
         </div>

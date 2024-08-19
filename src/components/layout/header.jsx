@@ -72,16 +72,15 @@ const Header = ({ className }) => {
               to={isHallOfFame ? "/" : "/hall-of-fame"}
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               aria-label="Home"
-              className="hidden xsm:flex gap-2"
+              className="ml-[-1.6125rem] gap-2"
             >
               <div className="group flex gap-1.5 items-center">
                 <span className="link ml-8 xl:ml-0">{isHallOfFame ? "Leaderboard" : "Hall of Fame"}</span>
-                <LinkIcon className="transform -rotate-45 before:w-[1.2rem] xl:before:w-[0.6rem] before:group-hover:w-[1.45rem] xl:before:group-hover:w-[0.75rem] translate-y-[-0.1rem]" />
               </div>
             </Link>
             <div className="group flex gap-1.5 items-center">
               <a href="https://bashaway.sliitfoss.org" target="_blank" className="link ml-8 xl:ml-0" rel="noreferrer">
-                Competition
+                The Competition
               </a>
               <LinkIcon className="transform -rotate-45 before:w-[1.2rem] xl:before:w-[0.6rem] before:group-hover:w-[1.45rem] xl:before:group-hover:w-[0.75rem] translate-y-[-0.1rem]" />
             </div>
