@@ -1,5 +1,5 @@
 import { createApi } from "@reduxjs/toolkit/query/react";
-import baseQuery from "./base";
+import baseQuery from "../base";
 import transformLeaderboardData from "./transformer";
 
 export const leaderboardApi = createApi({
@@ -13,14 +13,15 @@ export const leaderboardApi = createApi({
     fetchPastLeaderboards: builder.query({
       queryFn: async ({ year = 2023, round, ghostLegion, page, filters, sorts }) => {
         let path = round == 1 ? "round1" : ghostLegion == true ? "ghost-legion" : "final";
+        
         try {
-          const data = await import(`../../../data/annual-leaderboard/${year}/${path}.json`);
-          const transformedData = transformLeaderboardData(data.default, undefined, { page, filters, sorts });
+          const data = await import(`../../../constants/annual-leaderboard/${year}/${path}.json`);
+          const transformedData = transformLeaderboardData({...(data.default)}, undefined, { page, filters, sorts });
           return { data: transformedData };
         } catch (error) {
           console.log("Failed to fetch data dynamically");
         }
-      }
+      },
     })
   })
 });
