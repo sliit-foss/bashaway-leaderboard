@@ -12,14 +12,14 @@ export const leaderboardApi = createApi({
     }),
     fetchPastLeaderboards: builder.query({
       queryFn: async ({ year = 2023, round, ghostLegion, page, filters, sorts }) => {
-        let path = round == 1 ? "round1" : ghostLegion == true ? "ghost-legion" : "final";
+        let path = round === 1 ? "round1" : ghostLegion === true ? "ghost-legion" : "final";
 
         try {
           const data = await import(`../../../constants/annual-leaderboard/${year}/${path}.json`);
           const transformedData = transformLeaderboardData({ ...data.default }, undefined, { page, filters, sorts });
           return { data: transformedData };
         } catch (error) {
-          console.log("Failed to fetch data dynamically");
+          console.error("Failed to fetch data dynamically");
         }
       }
     })

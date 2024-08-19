@@ -1,4 +1,4 @@
-import { orderBy } from "lodash";
+import { default as orderBy } from "lodash";
 import { isRegex } from "@/utils";
 
 const transformLeaderboardData = (response, _, arg) => {
