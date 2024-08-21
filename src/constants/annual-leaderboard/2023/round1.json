@@ -1,0 +1,788 @@
+{
+  "data": [
+    {
+      "name": "TrackTech",
+      "email": "radith.20@cse.mrt.ac.lk",
+      "university": "University of Moratuwa",
+      "eliminated": false,
+      "score": 550
+    },
+    {
+      "name": "HereForTheBytes",
+      "email": "hereforthebytes@gmail.com",
+      "university": "UCSC",
+      "eliminated": false,
+      "score": 525
+    },
+    {
+      "name": "' OR 1=1 --",
+      "email": "nisaldasunpriya@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": false,
+      "score": 525
+    },
+    {
+      "name": "REISUB",
+      "email": "nirmalsavinda29@gmail.com",
+      "university": "UCSC",
+      "eliminated": false,
+      "score": 350
+    },
+    {
+      "name": "5H4D0W\\ G4RD3N",
+      "email": "qjoyal@gmail.com",
+      "university": "SLIIT",
+      "eliminated": false,
+      "score": 300
+    },
+    {
+      "name": "WeDoNotSow",
+      "email": "baqirhabeeb@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": false,
+      "score": 225
+    },
+    {
+      "name": "The BroCode",
+      "email": "sasikasankalana321@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": false,
+      "score": 200
+    },
+    {
+      "name": "MegaMinds",
+      "email": "kavindudamsith9@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": false,
+      "score": 200
+    },
+    {
+      "name": "4bit",
+      "email": "patalee2001@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": false,
+      "score": 150
+    },
+    {
+      "name": "iCoders",
+      "email": "sandaruwanwgma@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": false,
+      "score": 150
+    },
+    {
+      "name": "FullBash/.",
+      "email": "wdilantha66@gmail.com",
+      "university": "NSBM",
+      "eliminated": true,
+      "score": 150
+    },
+    {
+      "name": "OneZero",
+      "email": "ravinduhapuarachchi@gmail.com",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 150
+    },
+    {
+      "name": "HackSquad",
+      "email": "nipunsandeepakck@gmail.com",
+      "university": "University of Peradeniya",
+      "eliminated": true,
+      "score": 150
+    },
+    {
+      "name": "Nasty_Owls",
+      "email": "yugantha1468@gmail.com",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 125
+    },
+    {
+      "name": "The X Order",
+      "email": "ashani.sansala16@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 125
+    },
+    {
+      "name": "Shell Warriors",
+      "email": "hirunaofficial@gmail.com",
+      "university": "ICBT",
+      "eliminated": true,
+      "score": 125
+    },
+    {
+      "name": "$cript_R0b0ts",
+      "email": "yasela2014@gmail.com",
+      "university": "University of Peradeniya",
+      "eliminated": true,
+      "score": 125
+    },
+    {
+      "name": "shiganshina :)",
+      "email": "wasath.vt@gmail.com",
+      "university": "NSBM",
+      "eliminated": true,
+      "score": 125
+    },
+    {
+      "name": "OneManArmy",
+      "email": "abdul.qadirv98@gmail.com",
+      "university": "UCSC",
+      "eliminated": true,
+      "score": 100
+    },
+    {
+      "name": "Marcopolo",
+      "email": "yashrashh05@gmail.com",
+      "university": "NSBM",
+      "eliminated": true,
+      "score": 100
+    },
+    {
+      "name": "11double0",
+      "email": "vidushsanidu07@gmail.com",
+      "university": "University of Peradeniya",
+      "eliminated": true,
+      "score": 100
+    },
+    {
+      "name": "BinaryBrilliance",
+      "email": "s19410@sci.pdn.ac.lk",
+      "university": "University of Peradeniya",
+      "eliminated": true,
+      "score": 100
+    },
+    {
+      "name": "mercode",
+      "email": "pathirana.sithmal@gmail.com",
+      "university": "IIT",
+      "eliminated": true,
+      "score": 100
+    },
+    {
+      "name": "CATS",
+      "email": "samithkarunathilake@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 75
+    },
+    {
+      "name": "one-ticket-please",
+      "email": "adeeshamanthila@outlook.com",
+      "university": "IIT",
+      "eliminated": true,
+      "score": 75
+    },
+    {
+      "name": "Team 404",
+      "email": "weareteam404@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 75
+    },
+    {
+      "name": "Mugiwara",
+      "email": "shrikarsan@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 75
+    },
+    {
+      "name": "Code Conjurers",
+      "email": "supung.20@cse.mrt.ac.lk",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 50
+    },
+    {
+      "name": "Hackhive",
+      "email": "hmsvhettiarachchi@std.foc.sab.ac.lk",
+      "university": "SUSL",
+      "eliminated": true,
+      "score": 50
+    },
+    {
+      "name": "Bytes_Coders",
+      "email": "sonacode44@gmail.com",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 50
+    },
+    {
+      "name": "Coding Blinders",
+      "email": "codingblinders@gmail.com",
+      "university": "UCSC",
+      "eliminated": true,
+      "score": 25
+    },
+    {
+      "name": "ByteSpark",
+      "email": "mithilathilochanaj@gmail.com",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 25
+    },
+    {
+      "name": "Ruhuna 1.0",
+      "email": "nevaasahanmath@gmail.com",
+      "university": "University of Ruhuna",
+      "eliminated": true,
+      "score": 25
+    },
+    {
+      "name": "Runtime Terror",
+      "email": "lightspeed.runtime@gmail.com",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Team PhoeniXdeV",
+      "email": "sanuuthaya02@gmail.com",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "hackOne",
+      "email": "tekshanmadhawa324@gmail.com",
+      "university": "University of Jaffna",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Access_denied",
+      "email": "maniltenuka@gmail.com",
+      "university": "UCSC",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "HARIS",
+      "email": "isuruvihan@gmail.com",
+      "university": "UCSC",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Error By Night",
+      "email": "it21206450@my.sliit.lk",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "A.A",
+      "email": "atheefofficial6@gmail.com",
+      "university": "SLTC",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Debug Entity",
+      "email": "prasadnirmal2021@gmail.com",
+      "university": "SLTC",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "What_the_Hack",
+      "email": "whatthehack.sltc@gmail.com",
+      "university": "SLTC",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Strikers",
+      "email": "sakithrandeev@gmail.com",
+      "university": "IIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Code Geeks",
+      "email": "yasodalasiru@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Tech Titans",
+      "email": "techtitans444@gmail.com",
+      "university": "University of Vavuniya",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "I am Atomic",
+      "email": "chirathpansilu@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "tERROR ",
+      "email": "kavirangot@gmail.com",
+      "university": "IIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Cyber Creepers",
+      "email": "glenperera2002@gmail.com",
+      "university": "IIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Lambda Baryons",
+      "email": "baryonslambda@gmail.com",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Coding Owls",
+      "email": "chamodiindrejith14@gmail.com",
+      "university": "University of Vavuniya",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "PySquardCoders",
+      "email": "thasvithu7@gmail.com",
+      "university": "University of Vavuniya",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "SoloRider",
+      "email": "chirathb14@gmail.com",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "One2Seven",
+      "email": "udayanga.aj@outlook.com",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Kamino",
+      "email": "cst20004@std.uwu.ac.lk",
+      "university": "Uva Wellassa University",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Meta Killers",
+      "email": "maleeshasparrow@gmail.com",
+      "university": "EUSL",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Code-Crafters",
+      "email": "navodyanethmi3@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Code Wizards",
+      "email": "codewizards123@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "CodeQuest",
+      "email": "lumini.20221981@iit.ac.lk",
+      "university": "IIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Scripters",
+      "email": "kanishkaekanayaka1004@outlook.com",
+      "university": "KDU",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "8 bit shrooms",
+      "email": "yasithasanjula2018@gmail.com",
+      "university": "EUSL",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Astronauts",
+      "email": "risithanadimal531@gmail.com",
+      "university": "EUSL",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "404 Not Found",
+      "email": "pasinduravimal@gmail.com",
+      "university": "UCSC",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Code Smokers",
+      "email": "madhawalakshan718@gmail.com",
+      "university": "EUSL",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Binary Blitz",
+      "email": "binaryblitz50@gmail.com",
+      "university": "IIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Scorpions",
+      "email": "contact.scorpions.info@gmail.com",
+      "university": "IIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Head Hunters",
+      "email": "ranushmithila45@gmail.com",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "PowerInfinity#1",
+      "email": "powerinfinitypow@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "PowerTech",
+      "email": "powertechpow@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Blazers",
+      "email": "ryanpussadeniya@gmail.com",
+      "university": "USJ",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Solo Scripting Sorcerer",
+      "email": "senadhee1999@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Rubber Ducky",
+      "email": "shathurshmanoharan@gmail.com",
+      "university": "IIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Hugs 4 Bugs",
+      "email": "lasindumvp2001@gmail.com",
+      "university": "SUSL",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Dracode",
+      "email": "dracode0.0@gmail.com",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Automation",
+      "email": "sashinsirichandra@gmail.com",
+      "university": "IIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Romio",
+      "email": "someshchandih@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Last Chance",
+      "email": "onaliy21@gmail.com",
+      "university": "NSBM",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Meraki",
+      "email": "chamudisiriwardena@gmail.com",
+      "university": "UCSC",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Satan Slaves",
+      "email": "dilax.18@cse.mrt.ac.lk",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "BinaryX",
+      "email": "dilshankavinda371@gmail.com",
+      "university": "University of Ruhuna",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "mCoders",
+      "email": "arwijesuriya.7@gmail.com",
+      "university": "University of Vavuniya",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "White Hats",
+      "email": "dinukaekanayaka18@gmail.com",
+      "university": "University of Kelaniya",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "InitialX",
+      "email": "minetheducation@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Tech Titanians",
+      "email": "techtitans2323@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Nova",
+      "email": "sanjulagathsara@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "v3nom",
+      "email": "it23195752@my.sliit.lk",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "hyperX",
+      "email": "koshala19299@gmail.com",
+      "university": "University of Ruhuna",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Zyndicate",
+      "email": "nimeshshamika@gmail.com",
+      "university": "University of Kelaniya",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "AnonymousHat",
+      "email": "4n0nym0ush4t@gmail.com",
+      "university": "University of Kelaniya",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "BASH Picca",
+      "email": "banula.19@cse.mrt.ac.lk",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "codeDRINKERS",
+      "email": "dulankabewardhana123@gmail.com",
+      "university": "University of Ruhuna",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Team consoleLog",
+      "email": "veerasaravanan.20220157@iit.ac.lk",
+      "university": "IIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Janitha Prabodha",
+      "email": "janitha.20220212@iit.ac.lk",
+      "university": "IIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "CodeCraft Samurai",
+      "email": "hashan_madusanka@outlook.com",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Vangaurd",
+      "email": "cst21050@std.uwu.ac.lk",
+      "university": "Uva Wellassa University",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Epic byte",
+      "email": "mnethmi27@gmail.com",
+      "university": "IIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "LEO",
+      "email": "leodassma@gmail.com",
+      "university": "University of Peradeniya",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Redshifts",
+      "email": "lakindu.21@cse.mrt.ac.lk",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "DevXcreW",
+      "email": "sahanchandrasena462@gmail.com",
+      "university": "UCSC",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Script_Kiddies",
+      "email": "himasharandil@gmail.com",
+      "university": "KDU",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Hash_Coders",
+      "email": "anuththaradias27@gmail.com",
+      "university": "SUSL",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Team WEBMates",
+      "email": "thevendranvithursan@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "PixelPioneers",
+      "email": "shanika010712@gmail.com",
+      "university": "SUSL",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Team Cygnus",
+      "email": "chamikasandaru01@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "URAQT",
+      "email": "gokulabisheak12@gmail.com",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "NoCode",
+      "email": "rajivapitiwaduge@gmail.com",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Night Wings",
+      "email": "gihangajanayaka08@gmail.com",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "LuciferArchangel",
+      "email": "luminde9958@gmail.com",
+      "university": "University of Vavuniya",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "ALHAM",
+      "email": "alham@duck.com",
+      "university": "-",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Team36T",
+      "email": "ramesharukshan3@gmail.com",
+      "university": "NIBM",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "A random team",
+      "email": "proushothkoushal@gmail.com",
+      "university": "NIBM",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "ByteBlaze",
+      "email": "pehandassanayaka@gmail.com",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "The Council",
+      "email": "theogcouncillors@gmail.com",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    }
+  ]
+}

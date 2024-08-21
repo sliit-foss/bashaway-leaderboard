@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
 import { portalURL } from "@/constants";
+import { hallOfFame } from "@/constants/routes";
 import { useBreakpoint } from "@/hooks";
 import { BashawayLeaderboard } from "@/icons";
 import { AnimatedSwitcher, Button } from "@sliit-foss/bashaway-ui/components";
@@ -17,6 +19,9 @@ const Header = ({ className }) => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const breakpoints = useBreakpoint();
+  const { pathname } = useLocation();
+
+  const isHallOfFame = pathname === hallOfFame;
 
   return (
     <header
@@ -67,9 +72,19 @@ const Header = ({ className }) => {
                 : "opacity-0 pointer-events-none xl:opacity-100 xl:pointer-events-auto"
             )}
           >
+            <Link
+              to={isHallOfFame ? "/" : "/hall-of-fame"}
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              aria-label="Home"
+              className="ml-[-1.6125rem] gap-2"
+            >
+              <div className="group flex gap-1.5 items-center">
+                <span className="link ml-8 xl:ml-0">{isHallOfFame ? "Leaderboard" : "Hall of Fame"}</span>
+              </div>
+            </Link>
             <div className="group flex gap-1.5 items-center">
               <a href="https://bashaway.sliitfoss.org" target="_blank" className="link ml-8 xl:ml-0" rel="noreferrer">
-                The competition
+                The Competition
               </a>
               <LinkIcon className="transform -rotate-45 before:w-[1.2rem] xl:before:w-[0.6rem] before:group-hover:w-[1.45rem] xl:before:group-hover:w-[0.75rem] translate-y-[-0.1rem]" />
             </div>
