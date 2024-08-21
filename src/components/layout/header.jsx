@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
 import { portalURL } from "@/constants";
-import { hallOfFame } from "@/constants/routes";
+import { HALL_OF_FAME } from "@/constants/routes";
 import { useBreakpoint } from "@/hooks";
 import { BashawayLeaderboard } from "@/icons";
 import { AnimatedSwitcher, Button } from "@sliit-foss/bashaway-ui/components";
@@ -19,9 +19,10 @@ const Header = ({ className }) => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const breakpoints = useBreakpoint();
+
   const { pathname } = useLocation();
 
-  const isHallOfFame = pathname === hallOfFame;
+  const isHallOfFame = pathname === HALL_OF_FAME;
 
   return (
     <header

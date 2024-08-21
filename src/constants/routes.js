@@ -1,1 +1,2 @@
-export const hallOfFame = "/hall-of-fame";
+export const HOME = "/";
+export const HALL_OF_FAME = "/hall-of-fame";
