@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
@@ -17,14 +17,11 @@ const buttonStyles = "mt-1.5 xl:mt-0 px-8 xl:px-[1.15rem] pb-2.5 xl:pb-[0.4rem] 
 
 const Header = ({ className }) => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
-  const [isHallOfFame, setIsHallOfFame] = useState();
 
   const breakpoints = useBreakpoint();
   const { pathname } = useLocation();
 
-  useEffect(() => {
-    setIsHallOfFame(pathname === hallOfFame);
-  }, [pathname]);
+  const isHallOfFame = pathname === hallOfFame;
 
   return (
     <header
