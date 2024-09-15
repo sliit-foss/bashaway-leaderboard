@@ -25,7 +25,7 @@
 
 <br/>
 
-Realtime leaderboard for bashaway 2023
+Realtime leaderboard for the Bashaway competition
 
 ## Deployments
 
