@@ -31,9 +31,8 @@ const transformLeaderboardData = (response, _, arg) => {
   }
 
   const totalPages = Math.ceil(response.data.length / 10);
-  response.data = response.data.slice((page - 1) * 10, page * 10);
 
-  console.log(response.data, 88);
+  response.data = response.data.slice((page - 1) * 10, page * 10);
 
   return {
     data: {
