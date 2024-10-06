@@ -1,4 +1,4 @@
-import { default as orderBy } from "lodash";
+import { default as orderBy } from "lodash/orderBy";
 import { isRegex } from "@/utils";
 
 const transformLeaderboardData = (response, _, arg) => {
@@ -32,6 +32,8 @@ const transformLeaderboardData = (response, _, arg) => {
 
   const totalPages = Math.ceil(response.data.length / 10);
   response.data = response.data.slice((page - 1) * 10, page * 10);
+
+  console.log(response.data, 88);
 
   return {
     data: {
