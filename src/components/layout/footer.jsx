@@ -1,6 +1,16 @@
 import { AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillYoutube, AiOutlineTwitter } from "react-icons/ai";
+import { FaTiktok } from "react-icons/fa";
 import { twMerge } from "tailwind-merge";
-import { facebook, instagram, linkedIn, repositoryLink, sliitFossMainWebsite, twitter, youTube } from "@/constants";
+import {
+  facebook,
+  instagram,
+  linkedIn,
+  repositoryLink,
+  sliitFossMainWebsite,
+  tikTok,
+  twitter,
+  youTube
+} from "@/constants";
 import { Bashaway, FOSS } from "@sliit-foss/bashaway-ui/icons";
 
 const usefulLinks = [
@@ -47,6 +57,9 @@ const Footer = ({ className }) => {
               </a>
               <a href={youTube} target="_blank" className="icon-hover" rel="noreferrer" aria-label="YouTube">
                 <AiFillYoutube className="h-[1.36rem] w-[1.36rem] -translate-y-[0.06rem]" />
+              </a>
+              <a href={tikTok} target="_blank" className="icon-hover" rel="noreferrer" aria-label="TikTok">
+                <FaTiktok className="h-[1.15rem] w-[1.15rem]" />
               </a>
             </div>
           </div>
