@@ -1,0 +1,74 @@
+{
+  "data": [
+      {
+          "name": "BroCode",
+          "email": "nisith.21@cse.mrt.ac.lk",
+          "university": "University of Moratuwa",
+          "eliminated": false,
+          "score": 600
+      },
+      {
+          "name": "KK_Coders",
+          "email": "kkcoderz@gmail.com",
+          "university": "University of Moratuwa",
+          "eliminated": false,
+          "score": 525
+      },
+      {
+          "name": "Red Shifts",
+          "email": "redshifts.sl@gmail.com",
+          "university": "University of Moratuwa",
+          "eliminated": false,
+          "score": 500
+      },
+      {
+          "name": "Terminal Titans",
+          "email": "fernandosachintha08@gmail.com",
+          "university": "CICRA Campus",
+          "eliminated": false,
+          "score": 475
+      },
+      {
+          "name": "5H4RK",
+          "email": "qjoyal@gmail.com",
+          "university": "SLIIT",
+          "eliminated": false,
+          "score": 475
+      },
+      {
+          "name": "DreamGen",
+          "email": "mithilathilochanaj@gmail.com",
+          "university": "SLIIT",
+          "eliminated": false,
+          "score": 475
+      },
+      {
+          "name": "Byte Bandits",
+          "email": "www.chamalbandara398@gmail.com",
+          "university": "SLIIT",
+          "eliminated": false,
+          "score": 475
+      },
+      {
+          "name": "Team Veritas",
+          "email": "pragash1001@gmail.com",
+          "university": "Informatics Institute of Technology",
+          "eliminated": false,
+          "score": 400
+      },
+      {
+          "name": "REISUB",
+          "email": "nirmalsavinda29@gmail.com",
+          "university": "UCSC",
+          "eliminated": false,
+          "score": 200
+      },
+      {
+          "name": "Tux",
+          "email": "peshalaprabhapoorna@gmail.com",
+          "university": "University of Ruhuna",
+          "eliminated": false,
+          "score": 175
+      }
+  ]
+}
