@@ -1,0 +1,981 @@
+{
+  "data": [
+    {
+      "name": "BroCode",
+      "university": "University of Moratuwa",
+      "eliminated": false,
+      "score": 925
+    },
+    {
+      "name": "doops",
+      "university": "General Sir John Kotelawala Defence University",
+      "eliminated": false,
+      "score": 925
+    },
+    {
+      "name": "Smooth_Operator",
+      "university": "University of Ruhuna",
+      "eliminated": false,
+      "score": 925
+    },
+    {
+      "name": "Cargo",
+      "university": "SLIIT",
+      "eliminated": false,
+      "score": 925
+    },
+    {
+      "name": "MoraDevs",
+      "university": "University of Moratuwa",
+      "eliminated": false,
+      "score": 900
+    },
+    {
+      "name": "ZeroDay301",
+      "university": "University of Moratuwa",
+      "eliminated": false,
+      "score": 900
+    },
+    {
+      "name": "Velosphere",
+      "university": "University of Moratuwa",
+      "eliminated": false,
+      "score": 875
+    },
+    {
+      "name": "Shell Shocked",
+      "university": "University of Moratuwa",
+      "eliminated": false,
+      "score": 850
+    },
+    {
+      "name": "TheByteForce",
+      "university": "University of Moratuwa",
+      "eliminated": false,
+      "score": 850
+    },
+    {
+      "name": "ByteForge",
+      "university": "SLIIT",
+      "eliminated": false,
+      "score": 850
+    },
+    {
+      "name": "Smile Labs",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 850
+    },
+    {
+      "name": "SudoForge",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 850
+    },
+    {
+      "name": "Bourne Again",
+      "university": "University of Colombo",
+      "eliminated": true,
+      "score": 850
+    },
+    {
+      "name": "The Worst Generation",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 850
+    },
+    {
+      "name": "KK_Coders",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 825
+    },
+    {
+      "name": "Team Vertex",
+      "university": "University of Kelaniya",
+      "eliminated": true,
+      "score": 825
+    },
+    {
+      "name": "Net Runners",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 825
+    },
+    {
+      "name": "SHYNC",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 825
+    },
+    {
+      "name": "devlua",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 800
+    },
+    {
+      "name": "Pixelites",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 800
+    },
+    {
+      "name": "Sparkles",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 800
+    },
+    {
+      "name": "The Po6",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 800
+    },
+    {
+      "name": "Byte Bandits",
+      "university": "Sliit",
+      "eliminated": true,
+      "score": 775
+    },
+    {
+      "name": "සෙවනගල හාස්කම්",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 775
+    },
+    {
+      "name": "zsh",
+      "university": "University of Colombo",
+      "eliminated": true,
+      "score": 725
+    },
+    {
+      "name": "Procrastinators",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 700
+    },
+    {
+      "name": "yarlbash",
+      "university": "University of Jaffna",
+      "eliminated": true,
+      "score": 650
+    },
+    {
+      "name": "Spirited Away",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 625
+    },
+    {
+      "name": "Gmora",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 625
+    },
+    {
+      "name": "TheKade",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 575
+    },
+    {
+      "name": "Cyber Samurai",
+      "university": "Open University of Sri Lanka",
+      "eliminated": true,
+      "score": 550
+    },
+    {
+      "name": "BugShooter",
+      "university": "Sri Lanka Technology Campus",
+      "eliminated": true,
+      "score": 525
+    },
+    {
+      "name": "Predictra",
+      "university": "Sabaragamuwa University of Sri Lanka",
+      "eliminated": true,
+      "score": 475
+    },
+    {
+      "name": "Team machan",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 450
+    },
+    {
+      "name": "NoobCode",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 425
+    },
+    {
+      "name": "Synapse⁴",
+      "university": "University of Kelaniya",
+      "eliminated": true,
+      "score": 425
+    },
+    {
+      "name": "01_AURA",
+      "university": "Open University of Sri Lanka",
+      "eliminated": true,
+      "score": 325
+    },
+    {
+      "name": "TeamY2K",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 275
+    },
+    {
+      "name": "IPv404",
+      "university": "University of Kelaniya",
+      "eliminated": true,
+      "score": 250
+    },
+    {
+      "name": "Heshan Thenura Kariyawasam",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 225
+    },
+    {
+      "name": "Nyx",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 225
+    },
+    {
+      "name": "Colon Double Slash",
+      "university": "Institue of Technology, University of Moratuwa",
+      "eliminated": true,
+      "score": 225
+    },
+    {
+      "name": "AK Falcons",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 200
+    },
+    {
+      "name": "codeBlooded",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 150
+    },
+    {
+      "name": "ScriptOps",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 150
+    },
+    {
+      "name": "TeamOrbit",
+      "university": "Sabaragamuwa University of Sri Lanaka",
+      "eliminated": true,
+      "score": 150
+    },
+    {
+      "name": "Team Glory",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 125
+    },
+    {
+      "name": "Cybersikko",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 125
+    },
+    {
+      "name": "GenNXT",
+      "university": "University of kelaniya",
+      "eliminated": true,
+      "score": 125
+    },
+    {
+      "name": "Octopipers",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 125
+    },
+    {
+      "name": "Zaara Labs",
+      "university": "NSBM Green University",
+      "eliminated": true,
+      "score": 100
+    },
+    {
+      "name": "Bash Squad",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 100
+    },
+    {
+      "name": "HawksEye",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 100
+    },
+    {
+      "name": "ScriptKiddies",
+      "university": "University of Colombo",
+      "eliminated": true,
+      "score": 100
+    },
+    {
+      "name": "pasan wijekoon",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 100
+    },
+    {
+      "name": "Teal Titans",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 50
+    },
+    {
+      "name": "Dreamforge",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 50
+    },
+    {
+      "name": "Prevail Stars",
+      "university": "International Campus Of Science And Technology",
+      "eliminated": true,
+      "score": 50
+    },
+    {
+      "name": "Tux",
+      "university": "University of Colombo",
+      "eliminated": true,
+      "score": 25
+    },
+    {
+      "name": "SoloCoder",
+      "university": "SLIIT CITY UNI",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "NewBiez",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Penguin",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Cyber Tribe",
+      "university": "Open University of Sri Lanka",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Team Diyakawa",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Trojans",
+      "university": "University of Colombo",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "SASKEY",
+      "university": "University of the people, USA",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Math trio",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Team Hyper Xtreme",
+      "university": "University of Sri Jayewardenepura",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "everburn",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Bug busters",
+      "university": "Sabaragamuwa University of Sri Lanka",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "AaLinux",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "akatzuki",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Neurova",
+      "university": "Sabaragamuwa University of Sri Lanka",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Creative Coders",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "SecQuantum",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Team X",
+      "university": "Informatics Institute of Technology",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "BlackPenguin",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "InnoX7",
+      "university": "Rajarata University of Sri Lanka",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Script Titan",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "SYBER",
+      "university": "Esoft Metro Campus",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "TechStep",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Encapky",
+      "university": "Horizon Campus",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Penguins",
+      "university": "University of Kelaniya",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "DOT",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Simple123",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Team WIS",
+      "university": "Informatics Institute of Technology",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Pebbles",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Tech Titans",
+      "university": "General Sir John Kotelawala Defence University",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Binary Beasts",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Caffeine Overflow",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "CodeLone",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Alpha 4",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Gryffin Tech",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Taurus",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "ReidInjection",
+      "university": "University of Colombo",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Code Crusaders",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "NPcoders",
+      "university": "Rajarata University of Sri Lanka",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "ScriptoMite",
+      "university": "University of Sri Jayewardenepura",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "one & zero",
+      "university": "National Institute of Business Management Galle",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "SLASH",
+      "university": "NSBM Green University",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "APEIRO",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "sudo_apt",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "skillissuesbro",
+      "university": "NSBM Green University",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "KoreBit",
+      "university": "Informatics Institute of Technology",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Revolt",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Team Sparta",
+      "university": "University of Ruhuna",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "zen",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "haxx_h4ck3r",
+      "university": "University of Colombo",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Sandamina De Silva",
+      "university": "University of Colombo",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "teamBashrc",
+      "university": "University of Colombo",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Cyber Breakers",
+      "university": "International Campus of Science and Technology",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Sudo",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "44Below",
+      "university": "Informatics Institute of Technology",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "SemanticCouncil_719",
+      "university": "General Sir John Kotelawala Defence University",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "CodeBuddies",
+      "university": "SriLanka Technological Campus - SLTC",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Void",
+      "university": "University of Colombo",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "HelloWorld",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Cicado",
+      "university": "International Campus of Science and Technology",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Quantum quill",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Terax",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "C-R-A",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Cloutix",
+      "university": "International Campus of Science and Technology",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Zero",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Harikishna Navaratnam",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Delicious",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Dragonite",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "DevCC",
+      "university": "University of Sri Jayawardenepura",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "NexScript",
+      "university": "University of Sri Jayewardenepura",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Hack’n’Bash",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Reprive",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "CodeWave",
+      "university": "Sabaragamuwa University of Sri Lanka",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Cyber Monks",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "NorthernKnights",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "BashET",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "VisionX",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "NovaSquadron",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Tombstone",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Spark",
+      "university": "National Institute of Business Management",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "AK Sharks",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Cruzer Blade",
+      "university": "Sabaragamuwa University of Sri Lanka",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "PixelPair",
+      "university": "University of Sri Jayewardenepura",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "ZeroDowntime",
+      "university": "Sri Lanka Institute of Information Technology",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "deCoders",
+      "university": "NSBM",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "ShellShock",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "CodeFlares",
+      "university": "General Sir John Kotelawala Defence University",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "The Root Warriors",
+      "university": "General Sir John Kotelawala Defence University",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Cyber_Savvy_",
+      "university": "NSBM Green University Town",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "JoyCoder",
+      "university": "SLIIT Northern Uni",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Codex888",
+      "university": "sabaragamuwa University",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Codeflex",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "ARK 18",
+      "university": "SLIIT Northern Uni",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "NeXora",
+      "university": "University of Kelaniya",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Cyber Sentinels",
+      "university": "NSBM Green University",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "ScriptWriters",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Capriqorn",
+      "university": "University of Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "The_Glitch",
+      "university": "General Sir John Kotelawala Defence University",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Lone Coder",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "ElevatorX",
+      "university": "APIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "CodeCraft",
+      "university": "SLIIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Seafure",
+      "university": "Moratuwa",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "NJ",
+      "university": "School Student",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "Team Nexus",
+      "university": "SLLIT",
+      "eliminated": true,
+      "score": 0
+    },
+    {
+      "name": "SLIIT FOSS User",
+      "eliminated": true,
+      "score": 0
+    }
+  ]
+}
