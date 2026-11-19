@@ -13,7 +13,7 @@ import { Bashaway, FOSS, Link as LinkIcon, Times } from "@sliit-foss/bashaway-ui
 const mobileNavIconStyles =
   "block xl:hidden absolute right-8 lg:right-24 h-[1.65rem] w-[1.65rem] cursor-pointer hover:text-black/70 transition-all duration-medium";
 
-const buttonStyles = "mt-1.5 xl:mt-0 px-8 xl:px-[1.15rem] pb-2.5 xl:pb-[0.4rem] min-w-[12rem] xl:min-w-[6rem]";
+const buttonStyles = "mt-1.5 xl:mt-0 px-8 xl:px-[1.15rem] pb-2.5 xl:pb-[0.4rem] min-w-48 xl:min-w-24";
 
 const Header = ({ className }) => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -27,7 +27,7 @@ const Header = ({ className }) => {
   return (
     <header
       className={twMerge(
-        `w-full min-h-[70px] xs:min-h-[90px] backdrop-blur-md fixed z-[200] transition-all duration-long border-b`,
+        `w-full min-h-[70px] xs:min-h-[90px] backdrop-blur-md fixed z-200 transition-all duration-long border-b`,
         className,
         mobileNavOpen && !breakpoints["xl"] ? "h-screen bg-white" : "h-[70px] xs:h-[90px] bg-white/80"
       )}
@@ -49,10 +49,10 @@ const Header = ({ className }) => {
             <BashawayLeaderboard className="hidden sm:block" />
           </Link>
           <Times height="15px" width="15px" className="hidden xsm:block opacity-20" />
-          <FOSS className="transform scale-[0.85] -translate-x-1" />
+          <FOSS className="transform scale-[0.85] -translate-x-1 ml-5 xsm:ml-0" />
         </div>
         <div className={twMerge("absolute inset-0 xl:relative")}>
-          <div className="w-full min-h-[70px] xs:min-h-[90px] xl:!min-h-0 flex justify-end items-center px-8 lg:px-24 relative z-50">
+          <div className="w-full min-h-[70px] xs:min-h-[90px] xl:min-h-0! flex justify-end items-center px-8 lg:px-24 relative z-50">
             <AnimatedSwitcher
               show={!mobileNavOpen && !breakpoints["xl"]}
               className="flex justify-center items-center h-full w-full"
@@ -87,7 +87,7 @@ const Header = ({ className }) => {
               <a href="https://bashaway.sliitfoss.org" target="_blank" className="link ml-8 xl:ml-0" rel="noreferrer">
                 The Competition
               </a>
-              <LinkIcon className="transform -rotate-45 before:w-[1.2rem] xl:before:w-[0.6rem] before:group-hover:w-[1.45rem] xl:before:group-hover:w-[0.75rem] translate-y-[-0.1rem]" />
+              <LinkIcon className="transform -rotate-45 before:w-[1.2rem] xl:before:w-[0.6rem] group-hover:before:w-[1.45rem] xl:group-hover:before:w-3 translate-y-[-0.1rem]" />
             </div>
             <a href={portalURL}>
               <Button className={buttonStyles}>Back to Portal</Button>

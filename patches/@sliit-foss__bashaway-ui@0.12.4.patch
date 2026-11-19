@@ -1,0 +1,164 @@
+diff --git a/dist/styles/animations/index.css b/dist/styles/animations/index.css
+index 401d5730e1177b7cebc3651311240273c4774fb8..b29ed87762fae44972a9e91b8ec2d4024825e914 100644
+--- a/dist/styles/animations/index.css
++++ b/dist/styles/animations/index.css
+@@ -4,13 +4,19 @@
+   .splash {
+     @apply relative overflow-hidden;
+     &:after {
+-      @apply content-[''] absolute block bg-white w-0 h-0 hover:w-[100%] hover:h-[100%] top-1/2 left-1/2 opacity-[0.15] rounded-full -translate-x-1/2 -translate-y-1/2 transition-all duration-medium;
++      @apply content-[''] absolute block bg-white w-0 h-0 top-1/2 left-1/2 opacity-[0.15] rounded-full -translate-x-1/2 -translate-y-1/2 transition-all duration-medium;
++    }
++    &:hover:after {
++      @apply w-[100%] h-[100%];
+     }
+   }
+   .animated-chevron {
+     @apply relative;
+     &:before {
+-      @apply content-[''] absolute w-0 h-[0.18rem] top-[41%] right-[-0.05rem] mr-[0.5rem] bg-current rounded group-hover:w-[0.55rem] group-hover:md:w-[0.7rem] transition-all duration-medium;
++      @apply content-[''] absolute w-0 h-[0.18rem] top-[41%] right-[-0.05rem] mr-[0.5rem] bg-current rounded transition-all duration-medium;
++    }
++    .group:hover &:before {
++      @apply w-[0.55rem] md:w-[0.7rem];
+     }
+   }
+   .animated-border {
+@@ -24,7 +30,10 @@
+     }
+     &:after {
+       background: linear-gradient(var(--angle, 225deg), var(--tw-gradient-stops)) border-box;
+-      @apply animate-[rotate_2s_linear_infinite] opacity-0 hover:opacity-100;
++      @apply animate-[rotate_2s_linear_infinite] opacity-0;
++    }
++    &:hover:after {
++      @apply opacity-100;
+     }
+   }
+ }
+diff --git a/dist/styles/utilities.css b/dist/styles/utilities.css
+index 968edb0557bdb3bd2518008ac5167bad08d22d6e..0c705545cfc0c510da3d9152f33ef0bb7bf2691c 100644
+--- a/dist/styles/utilities.css
++++ b/dist/styles/utilities.css
+@@ -1,3 +1,37 @@
++@utility card-red-bg {
++  background: linear-gradient(180deg, rgba(255, 0, 0, 0.06) 0%, rgba(255, 0, 0, 0.04) 100%);
++}
++@utility card-red-title {
++  @apply text-[#680000]!;
++}
++@utility card-red-body {
++  @apply text-[#66000099]!;
++}
++@utility card-red-border {
++  border: 2px solid rgba(255, 0, 0, 0.18);
++}
++@utility card-red-badge-text {
++  @apply text-[#C00]!;
++}
++@utility card-blue-bg {
++  background: linear-gradient(180deg, rgba(68, 0, 255, 0.06) 0%, rgba(68, 0, 255, 0.04) 100%);
++}
++@utility card-blue-border {
++  border: 2px solid rgba(68, 0, 255, 0.18);
++}
++@utility card-blue-badge-text {
++  @apply text-[#3500CC]!;
++}
++@utility card-green-bg {
++  background: linear-gradient(180deg, rgba(0, 255, 161, 0.06) 0%, rgba(0, 255, 161, 0.04) 100%);
++}
++@utility card-green-border {
++  border: 2px solid rgba(0, 255, 161, 0.18);
++}
++@utility card-green-badge-text {
++  @apply text-[#00CC83]!;
++}
++
+ @layer utilities {
+   .icon-hover {
+     @apply transition-colors duration-medium hover:text-black/70;
+@@ -5,28 +39,13 @@
+   .link {
+     @apply hover:opacity-70 transition-all duration-medium;
+   }
+-  .card-red-bg {
+-    background: linear-gradient(180deg, rgba(255, 0, 0, 0.06) 0%, rgba(255, 0, 0, 0.04) 100%);
+-  }
+-  .card-red-title {
+-    @apply !text-[#680000];
+-  }
+-  .card-red-body {
+-    @apply !text-[#66000099];
+-  }
+-  .card-red-border {
+-    border: 2px solid rgba(255, 0, 0, 0.18);
+-  }
+-  .card-red-badge-text {
+-    @apply !text-[#C00];
+-  }
+   .card-red-badge {
+-    @apply card-red-bg !card-red-badge-text !card-red-border filter hover:brightness-150 transition-all duration-medium;
++    @apply card-red-bg card-red-badge-text! card-red-border! filter hover:brightness-150 transition-all duration-medium;
+   }
+   .card-red {
+-    @apply card-red-bg [&>.title>*]:card-red-title [&>h2]:card-red-title filter group-hover:[&>.title>*]:brightness-[1.3] group-hover:[&>h2]:brightness-150 transition-all duration-medium;
++    @apply card-red-bg [&>.title>*]:card-red-title [&>h2]:card-red-title filter [&>.title>*]:group-hover:brightness-[1.3] [&>h2]:group-hover:brightness-150 transition-all duration-medium;
+     > .badge {
+-      @apply card-red-bg !card-red-badge-text !card-red-border group-hover:brightness-150;
++      @apply card-red-bg card-red-badge-text! card-red-border! group-hover:brightness-150;
+     }
+     > div > span {
+       @apply card-red-badge-text card-red-border group-hover:brightness-150;
+@@ -38,22 +57,13 @@
+       }
+     }
+   }
+-  .card-blue-bg {
+-    background: linear-gradient(180deg, rgba(68, 0, 255, 0.06) 0%, rgba(68, 0, 255, 0.04) 100%);
+-  }
+-  .card-blue-border {
+-    border: 2px solid rgba(68, 0, 255, 0.18);
+-  }
+-  .card-blue-badge-text {
+-    @apply !text-[#3500CC];
+-  }
+   .card-blue {
+-    @apply card-blue-bg [&>.title>*]:text-[#3500CC] [&>h2]:text-[#3500CC] filter group-hover:[&>.title>*]:brightness-[1.3] group-hover:[&>h2]:brightness-150 transition-all duration-medium;
++    @apply card-blue-bg [&>.title>*]:text-[#3500CC] [&>h2]:text-[#3500CC] filter [&>.title>*]:group-hover:brightness-[1.3] [&>h2]:group-hover:brightness-150 transition-all duration-medium;
+     > .badge {
+-      @apply card-blue-bg !card-blue-badge-text !card-blue-border group-hover:brightness-150;
++      @apply card-blue-bg card-blue-badge-text! card-blue-border! group-hover:brightness-150;
+     }
+     > div > span {
+-      @apply card-blue-badge-text !card-blue-border group-hover:brightness-150;
++      @apply card-blue-badge-text card-blue-border! group-hover:brightness-150;
+     }
+     > .markdown {
+       @apply text-[#1B006699] group-hover:brightness-150;
+@@ -62,22 +72,13 @@
+       }
+     }
+   }
+-  .card-green-bg {
+-    background: linear-gradient(180deg, rgba(0, 255, 161, 0.06) 0%, rgba(0, 255, 161, 0.04) 100%);
+-  }
+-  .card-green-border {
+-    border: 2px solid rgba(0, 255, 161, 0.18);
+-  }
+-  .card-green-badge-text {
+-    @apply !text-[#00CC83];
+-  }
+   .card-green {
+-    @apply card-green-bg [&>.title>*]:text-[#006842] [&>h2]:text-[#006842] filter group-hover:[&>.title>*]:brightness-[1.3] group-hover:[&>h2]:brightness-[1.3] transition-all duration-medium;
++    @apply card-green-bg [&>.title>*]:text-[#006842] [&>h2]:text-[#006842] filter [&>.title>*]:group-hover:brightness-[1.3] [&>h2]:group-hover:brightness-[1.3] transition-all duration-medium;
+     > .badge {
+-      @apply card-green-bg card-green-badge-text !card-green-border group-hover:brightness-105;
++      @apply card-green-bg card-green-badge-text card-green-border! group-hover:brightness-105;
+     }
+     > div > span {
+-      @apply card-green-badge-text card-green-border group-hover:brightness-105; 
++      @apply card-green-badge-text card-green-border group-hover:brightness-105;
+     }
+     > .markdown {
+       @apply text-[#00664199] group-hover:brightness-125;

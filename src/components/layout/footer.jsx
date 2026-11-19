@@ -42,21 +42,21 @@ const Footer = ({ className }) => {
               Open Source Software (FOSS)
             </p>
             <div className="font-semibold text-[20px] font-cabinet">CONNECT WITH US</div>
-            <div className="flex space-x-3 flex-shrink-0 -ml-0.5">
+            <div className="flex space-x-3 shrink-0 -ml-0.5">
               <a href={facebook} target="_blank" className="icon-hover" rel="noreferrer" aria-label="Facebook">
                 <AiFillFacebook className="h-5 w-5" />
               </a>
               <a href={instagram} target="_blank" className="icon-hover" rel="noreferrer" aria-label="Instagram">
-                <AiFillInstagram className="h-[1.292rem] w-[1.292rem] -translate-y-[0.01rem]" />
+                <AiFillInstagram className="h-[1.292rem] w-[1.292rem] translate-y-[-0.01rem]" />
               </a>
               <a href={twitter} target="_blank" className="icon-hover" rel="noreferrer" aria-label="Twitter">
-                <AiOutlineTwitter className="h-[1.48rem] w-[1.48rem] -translate-y-[0.10rem]" />
+                <AiOutlineTwitter className="h-[1.48rem] w-[1.48rem] translate-y-[-0.1rem]" />
               </a>
               <a href={linkedIn} target="_blank" className="icon-hover" rel="noreferrer" aria-label="LinkedIn">
                 <AiFillLinkedin className="h-5 w-5" />
               </a>
               <a href={youTube} target="_blank" className="icon-hover" rel="noreferrer" aria-label="YouTube">
-                <AiFillYoutube className="h-[1.36rem] w-[1.36rem] -translate-y-[0.06rem]" />
+                <AiFillYoutube className="h-[1.36rem] w-[1.36rem] translate-y-[-0.06rem]" />
               </a>
               <a href={tikTok} target="_blank" className="icon-hover" rel="noreferrer" aria-label="TikTok">
                 <FaTiktok className="h-[1.15rem] w-[1.15rem]" />
