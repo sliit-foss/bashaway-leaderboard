@@ -1,6 +1,20 @@
-@import "fonts.css";
+@import "tailwindcss";
+@import "./fonts.css";
 @import "@sliit-foss/bashaway-ui/styles";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@config "../../tailwind.config.js";
+@source "../../node_modules/@sliit-foss/bashaway-ui/dist";
+
+/* Tailwind CSS 3 defaults that changed in 4, kept so the UI renders as before */
+@theme {
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}

@@ -15,7 +15,7 @@ const App = () => {
           <Header />
           <motion.main
             key={location.pathname}
-            className="w-full max-w-body mx-auto px-8 lg:px-24 flex flex-col items-center relative z-[5] font-inter break-words  overflow-x-hidden pt-[calc(70px+64px)] xs:pt-[calc(90px+64px)] pb-[64px]"
+            className="w-full max-w-body mx-auto px-8 lg:px-24 flex flex-col items-center relative z-5 font-inter wrap-break-word  overflow-x-hidden pt-[134px] xs:pt-[154px] pb-[64px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0, transition: { duration: 0.3 } }}

@@ -1,0 +1,19 @@
+ignoredBuiltDependencies:
+  - lefthook
+
+# @sliit-foss/bashaway-ui pins React 18 era versions as regular dependencies
+overrides:
+  "@radix-ui/react-slot": 1.5.0
+  "@sliit-foss/bashaway-ui>framer-motion": "$framer-motion"
+  "@sliit-foss/bashaway-ui>lodash": "$lodash"
+  "@sliit-foss/bashaway-ui>react": "$react"
+  "@sliit-foss/bashaway-ui>react-dom": "$react-dom"
+  "@sliit-foss/bashaway-ui>react-icons": "$react-icons"
+  "@sliit-foss/bashaway-ui>react-loader-spinner": "$react-loader-spinner"
+  "@sliit-foss/bashaway-ui>react-redux": "$react-redux"
+  "@sliit-foss/bashaway-ui>react-router-dom": "$react-router-dom"
+  "@sliit-foss/bashaway-ui>tailwind-merge": "$tailwind-merge"
+
+patchedDependencies:
+  "@sliit-foss/bashaway-ui@0.12.4": patches/@sliit-foss__bashaway-ui@0.12.4.patch
+  react-loading-skeleton@3.3.1: patches/react-loading-skeleton@3.3.1.patch

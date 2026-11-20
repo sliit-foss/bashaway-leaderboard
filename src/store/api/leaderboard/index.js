@@ -18,7 +18,7 @@ export const leaderboardApi = createApi({
           const data = await import(`../../../constants/annual-leaderboard/${year}/${path}.json`);
           const transformedData = transformLeaderboardData({ ...data.default }, undefined, { page, filters, sorts });
           return { data: transformedData };
-        } catch (error) {
+        } catch {
           console.error("Failed to fetch data dynamically");
         }
       }
