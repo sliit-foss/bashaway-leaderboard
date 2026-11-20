@@ -1,0 +1,58 @@
+{
+  "data": [
+    {
+      "name": "Velosphere",
+      "university": "University of Moratuwa",
+      "eliminated": false,
+      "score": 625
+    },
+    {
+      "name": "Cargo",
+      "university": "SLIIT",
+      "eliminated": false,
+      "score": 575
+    },
+    {
+      "name": "BroCode",
+      "university": "University of Moratuwa",
+      "eliminated": false,
+      "score": 525
+    },
+    {
+      "name": "MoraDevs",
+      "university": "University of Moratuwa",
+      "eliminated": false,
+      "score": 375
+    },
+    {
+      "name": "doops",
+      "university": "General Sir John Kotelawala Defence University",
+      "eliminated": false,
+      "score": 275
+    },
+    {
+      "name": "ByteForge",
+      "university": "SLIIT",
+      "eliminated": false,
+      "score": 250
+    },
+    {
+      "name": "TheByteForce",
+      "university": "University of Moratuwa",
+      "eliminated": false,
+      "score": 125
+    },
+    {
+      "name": "Shell Shocked",
+      "university": "University of Moratuwa",
+      "eliminated": false,
+      "score": 100
+    },
+    {
+      "name": "Smooth_Operator",
+      "university": "University of Ruhuna",
+      "eliminated": false,
+      "score": 75
+    }
+  ]
+}
